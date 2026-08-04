@@ -1,0 +1,31 @@
+# ==========================================
+# 1. GLOBAL LOCATION & NETWORK PROVIDER
+# ==========================================
+# Mengaktifkan fitur layanan lokasi dan jaringan Google secara universal
+ro.com.google.locationfeatures=1
+ro.com.google.networklocation=1
+
+# Mengosongkan region agar OS otomatis menyesuaikan dengan NITZ (jaringan seluler lokal di negara mana pun)
+ro.location.osnlp.region=
+
+# ==========================================
+# 2. A-GPS & LTE POSITIONING (GLOBAL)
+# ==========================================
+# Mode A-GPS: 2 (Control Plane) atau 1 (User Plane). Mengaktifkan kapabilitas A-GPS penuh
+ro.ril.def.agps.mode=2
+ro.ril.def.agps.feature=1
+
+# Memaksa LPP (LTE Positioning Protocol) Profile 3 untuk bantuan akurasi dari menara seluler 4G/5G di seluruh dunia
+persist.sys.gps.lpp=3
+
+# Mengizinkan penggunaan NLP (Network Location Provider) untuk membantu penguncian A-GPS
+persist.sys.gps.nlp.agps=1
+
+# ==========================================
+# 3. SENSOR ASSISTANCE & HARDWARE (Tingkat OS)
+# ==========================================
+# Mengaktifkan SAP (Sensor Assistance Positioning) untuk membantu akurasi saat sinyal terhalang
+persist.sys.gps.sap=1
+
+# Menonaktifkan pembatasan daya sementara pada layanan lokasi (agar lebih agresif)
+ro.location.osnlp.min_time=1000
