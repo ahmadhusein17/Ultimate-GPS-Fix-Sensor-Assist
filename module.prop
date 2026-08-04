@@ -1,0 +1,6 @@
+id=gps-fix-ultimate-ksu
+name=Ultimate GPS Fix & Sensor Assist (Global)
+version=v3.0.0
+versionCode=300
+author=ahmadhusein17
+description=Advanced KernelSU/Magisk module for ultimate GPS accuracy and fast locking. Enables multi-constellation GNSS (GLONASS, Galileo, Beidou), global NTP/SUPL servers, and hardware sensor assistance.
